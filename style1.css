@@ -33,7 +33,7 @@
     background-color:rgb(148, 148, 70) ;
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: white;
+    -webkit-text-fill-color: rgb(155, 45, 45);
     -moz-text-fill-color: transparent;
     display: flex;
     align-items: center;
@@ -295,6 +295,11 @@
     width: 80%;
 }
 
+.content4{
+    display: flex;
+    justify-content: center;
+}
+
 /* Making the website mobile responsive */
 @media screen and (max-width: 768px){
     .main__container {
@@ -347,3 +352,331 @@
        margin: 2.5rem 0;
     }
 }
+
+/* Servies offered */
+
+.services{
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.services h1{
+    background-color: #f77062;
+    background-image: linear-gradient(to right, #f77062 0%, #ff867a 0%, #ff867f 21%, #f99185 52%, red 78%, lightpink 100% ) ;
+    background-size: 100%;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.services__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.services__card {
+    margin: 1rem;
+    height: 525px;
+    width:400px;
+    border-radius: 4px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17, 0.6) 100%), url('/images/img2.jpg');
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+
+.services__card:nth-child(2){
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17, 0.6) 100%), url('/images/img3.jpg');
+
+}
+
+.services h2{
+    position: absolute;
+    top: 350px;
+    left:30px;
+}
+
+.services__card p{
+    position: absolute;
+    top: 400px;
+    left: 30px;
+}
+
+.services__card button {
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px ;
+    background-color: #f77062;
+    position: absolute;
+    top: 440px;
+    left: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.services__card:hover{
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 960px) {
+    .services{
+        height: 1600px;
+    }
+
+    .services h1 {
+        font-size: 2rem;
+        margin-top: 12rem;
+    }
+}
+
+
+/* when it shrinks for cell phone */
+@media screen and (max-width: 480px) {
+
+.services {
+height: 1400px;
+}
+
+.services h1 {
+    font-size: 1.2rem;
+}
+
+.services__card{
+    width: 300px;
+}
+
+}
+
+/* Footer CSS */
+
+.footer__container{
+    background-color: black;
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+
+#footer__logo{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.footer__links {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__link--wrapper{
+    display: flex;
+}
+
+.footer__link--items{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 16px;
+    text-align: left;
+    width: 160px;
+    box-sizing: border-box;
+}
+
+.footer__link--items h2{
+    margin-bottom: 16px;
+}
+
+.footer__link--items > h2 {
+    color: white;
+}
+
+.footer__link--items a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+.footer__link--items a:hover {
+    color: #e9e9e9;
+    transition: 0.3s ease-out;
+}
+
+/* social media */
+.social__icon--link{
+    color: #fff;
+    font-size: 24px;
+}
+
+.social__media--link{
+    color: white;
+    font-size: 24px;
+}
+
+.social__media{
+    max-width: 1000px;
+    width: 100%;
+}
+
+.social__media--wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto 0 auto;
+}
+
+.social__icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 240px;
+}
+
+.social__logo {
+    color: #fff;
+    justify-self: flex-start;
+    margin-left: 20px;
+    cursor:pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.website__rights {
+    color: #fff;
+}
+
+@media screen and (max-width: 820px) {
+    .footer__links{
+        padding-top: 2rem;
+    }
+    .footer__logo {
+        margin-bottom: 2rem;
+    }
+
+    .website__rights{
+        margin-bottom: 2rem;
+    }
+    
+    .footer__link--wrapper{
+        flex-direction: column;
+    }
+
+    .social__media--wrap{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .footer__link--items {
+        margin: 0;
+        padding: 10px;
+        width: 100%;
+    }
+}
+
+
+
+/*  Photo Grid */
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+  
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px 1fr 1fr 100px;
+  
+    gap: 5px;
+    padding: 10px;
+  }
+  
+  .container div {
+    padding: 10px;
+    border: 1px solid white;
+  }
+  
+  .header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .content1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .content2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .content4 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .footer {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  
+  .g1{
+      max-width: 300px;
+  }
+  .g2{
+    max-width: 300px;
+}
+.g3{
+    max-width: 300px;
+}
+
+
+
+
+
+
+
+    /* Styling Form */
+
+.form__container{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.form{
+    width: 50%;
+    height: 400px;
+    padding: 12px  10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 10%;
+    
+}
+

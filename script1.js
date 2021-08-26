@@ -14,6 +14,7 @@ Array.from(pics).forEach((create) =>
 
 
 /// Fetching API
+// fetched my api from rapidapi.com by giphy
 async function grab() { 
     const URL = "https://giphy.p.rapidapi.com/v1/gifs/trending?api_key=dc6zaTOxFJmzC&limit=25&rating=pg-13"
     fetch (URL, {
@@ -42,3 +43,6 @@ async function grab() {
 
 .catch(err => console.error(err))
 }
+
+
+// Form for Data
